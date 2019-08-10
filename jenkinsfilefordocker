@@ -3,6 +3,6 @@ node{
      git 'https://github.com/madhuridafal/maven-project/'
      }
   stage('package create'){
-      sh label: '', script: 'maven package goal'
+      sh label: '', script: 'mvn clean package'
       }
      }
